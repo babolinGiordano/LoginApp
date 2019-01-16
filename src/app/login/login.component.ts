@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
    private formSubmitAttempt: boolean;
 
    constructor(
-      private fb: FormBuilder;
+      private fb: FormBuilder,
       private authService: AuthService
    ) { }
 
