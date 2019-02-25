@@ -3,32 +3,32 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Router } from '@angular/router';
 import { User } from './user';
 
-const USERNAME = 'babo';
-const PASSWORD = '5marzo99';
+const USERNAME = 'wedding';
+const PASSWORD = '29giugno2019';
 
 @Injectable()
 export class AuthService {
 
-   private loggedIn = new BehaviorSubject<boolean>(false);
+  private loggedIn = new BehaviorSubject<boolean>(false);
 
-   get isLoggedIn() {
-      return this.loggedIn.asObservable();
-   }
+  get isLoggedIn() {
+    return this.loggedIn.asObservable();
+  }
 
-   constructor(
-      private router: Router
-   ) { }
+  constructor(
+    private router: Router
+  ) { }
 
-   login(user: User) {
-      if (user.userName === USERNAME && user.password === PASSWORD) {
-         this.loggedIn.next(true);
-         this.router.navigate(['/']);
-      }
-   }
+  login(user: User) {
+    if (user.userName === USERNAME && user.password === PASSWORD) {
+      this.loggedIn.next(true);
+      this.router.navigate(['/']);
+    }
+  }
 
-   logout() {
-      this.loggedIn.next(false);
-      this.router.navigate(['/login']);
-   }
+  logout() {
+    this.loggedIn.next(false);
+    this.router.navigate(['/login']);
+  }
 
 }

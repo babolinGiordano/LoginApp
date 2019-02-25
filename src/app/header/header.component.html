@@ -1,10 +1,8 @@
-<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
-   <span>
-      <img src="assets/img/angular-white-transparent.svg" class="angular-logo"> Angular NavBar + Login Example #01
-   </span>
-   <span class="fill-remaining-space"></span>
-   <button mat-button>Menu Option 01</button>
-   <button mat-button>Menu Option 02</button>
-   <button mat-button routerLink="login" *ngIf="!isLoggedIn">Login</button>
-   <button mat-button (click)="onLogout()" *ngIf="isLoggedIn">Logout</button>
+<mat-toolbar color="accent" *ngIf="isLoggedIn$ | async as isLoggedIn">
+  <span>
+    <img src="assets/img/angular-white-transparent.svg" class="angular-logo"> Chiara & Giordano Wedding day
+  </span>
+  <span class="fill-remaining-space"></span>
+  <button mat-button routerLink="login" *ngIf="!isLoggedIn">Login</button>
+  <button mat-button (click)="onLogout()" *ngIf="isLoggedIn">Logout</button>
 </mat-toolbar>
