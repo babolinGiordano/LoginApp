@@ -1,15 +1,13 @@
 mat-card {
-   max-width: 400px;
-   margin: 2em auto;
-   text-align: center;
- }
- .signin-content {
-   padding: 60px 1rem;
-   background-image: url("../../assets/img/beach-backgrounds.jpg");
-   height: -webkit-fill-available;
- }
- .full-width-input {
-   width: 100%;
- }
-
-
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+.signin-content {
+  padding: 60px 1rem;
+  background-image: url("../../assets/img/beach-backgrounds.jpg");
+  height: stretch;
+}
+.full-width-input {
+  width: 100%;
+}
