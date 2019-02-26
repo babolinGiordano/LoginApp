@@ -11,6 +11,9 @@ import { Component, OnInit } from '@angular/core';
          height: 35px;
          vertical-align: middle;
          }
+         .mat-toolbar.mat-primary {
+            background:#4bb53f;
+         }
       .fill-remaining-space {
       flex: 1 1 auto;
       }

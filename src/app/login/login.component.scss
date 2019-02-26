@@ -1,15 +1,35 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container-sfondo {
+  background: url("../../assets/img/intro.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover;
+  height: 98vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+.item {
+  background-color: #f3f2ef;
+  border-radius: 3px;
+  // width: 200px;
+  // height: 100px;
+}
+
 mat-card {
-   max-width: 400px;
-   margin: 2em auto;
-   text-align: center;
- }
- .signin-content {
-   padding: 60px 1rem;
-   background-image: url("../../assets/img/beach-backgrounds.jpg");
-   height: -webkit-fill-available;
- }
- .full-width-input {
-   width: 100%;
- }
+  max-width: 400px;
+  text-align: center;
+}
 
-
+.full-width-input {
+  width: 100%;
+}
