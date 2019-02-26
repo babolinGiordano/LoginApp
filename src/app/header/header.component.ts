@@ -3,10 +3,10 @@ import { Observable } from 'rxjs/Observable';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-   selector: 'app-header',
-   templateUrl: './header.component.html',
-   styles: [
-      `.angular-logo {
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styles: [
+    `.angular-logo {
          margin: 0 4px 3px 0;
          height: 35px;
          vertical-align: middle;
@@ -18,19 +18,19 @@ import { Component, OnInit } from '@angular/core';
       flex: 1 1 auto;
       }
       `
-   ]
+  ]
 })
 export class HeaderComponent implements OnInit {
-   isLoggedIn$: Observable<boolean>;
+  isLoggedIn$: Observable<boolean>;
 
-   constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService) { }
 
-   ngOnInit() {
-      this.isLoggedIn$ = this.authService.isLoggedIn;
-   }
+  ngOnInit() {
+    this.isLoggedIn$ = this.authService.isLoggedIn;
+  }
 
-   onLogout() {
-      this.authService.logout();
-   }
+  onLogout() {
+    this.authService.logout();
+  }
 
 }
